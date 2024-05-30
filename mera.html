@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+    
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+    
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.95); /* Adjust opacity here */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(99, 72, 72, 0.1);
+        }
+    
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    
+        ul {
+            list-style: none;
+            padding: 5;
+        }
+    
+        li {
+            margin: 2em 0;
+        }
+    
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+    
+        #logo {
+            width: 75px; /* Adjust the width and height to your liking */
+            height: 75px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+                <header>
+                    <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+                    <h1>SCHLAHUB</h1>
+                </header>
+                <main>
+                    <section id="companies">
+                        <h1>Mercedes-Benz Aptitude Interview Questions</h1>
+
+                        <h2>Numerical Reasoning:</h2>
+                        <ul>
+                            <li>If a car travels at an average speed of 60 miles per hour, how far will it travel in 2.5 hours?</li>
+                            <li>A Mercedes-Benz factory produces 500 cars per day. How many cars will it produce in a week?</li>
+                        </ul>
+                    
+                        <h2>Verbal Reasoning:</h2>
+                        <ul>
+                            <li>Read the following passage about Mercedes-Benz's latest innovation and answer the questions that follow.</li>
+                            <li>Synonym/Antonym questions: Provide a word similar/opposite in meaning to a given word related to the automotive industry.</li>
+                        </ul>
+                    
+                        <h2>Logical Reasoning:</h2>
+                        <ul>
+                            <li>Puzzle questions: Solve puzzles that require logical reasoning and critical thinking skills.</li>
+                            <li>Pattern recognition: Identify the next item in a sequence of numbers, letters, or shapes.</li>
+                        </ul>
+                    
+                        <h2>Data Interpretation:</h2>
+                        <ul>
+                            <li>Interpret graphs or charts related to Mercedes-Benz sales data or market trends.</li>
+                            <li>Analyze a table showing production statistics for different Mercedes-Benz models and answer questions based on the data.</li>
+                        </ul>
+                    
+                        <h2>Coding/Programming (if applicable):</h2>
+                        <ul>
+                            <li>Solve basic programming problems related to algorithms or data structures.</li>
+                            <li>Write code to solve a problem relevant to the automotive industry, such as calculating fuel efficiency or simulating vehicle movements.</li>
+                        </ul>
+                        <h2>6. Mathematical Aptitude:</h2>
+                        <ul>
+                            <li>If the price of a Mercedes-Benz vehicle increases by 15% and then decreases by 10%, what is the net percentage change in price?</li>
+                            <li>A car's fuel tank can hold 50 liters of fuel. If the car consumes 8 liters of fuel per 100 kilometers, how far can it travel on a full tank?</li>
+                        </ul>
+                    
+                        <h2>7. Logical Deduction:</h2>
+                        <ul>
+                            <li>If all Mercedes-Benz vehicles are known for their luxury features, and the E-Class is a Mercedes-Benz model, can we conclude that the E-Class has luxury features?</li>
+                            <li>If Mercedes-Benz manufactures both SUVs and sedans, and all SUVs have all-wheel drive, can we conclude that all sedans have all-wheel drive?</li>
+                        </ul>
+                    
+                        <h2>8. Critical Thinking:</h2>
+                        <ul>
+                            <li>Given a scenario where Mercedes-Benz is launching a new electric vehicle model, what factors should the company consider in pricing the vehicle competitively?</li>
+                            <li>If Mercedes-Benz is facing declining sales in a particular market segment, propose potential strategies to regain market share and improve sales performance.</li>
+                        </ul>
+                    
+                        <h2>9. Pattern Recognition:</h2>
+                        <ul>
+                            <li>Identify the pattern in the following series: 2, 5, 10, 17, 26, ...</li>
+                            <li>What comes next in the series: Mercedes-Benz A-Class, Mercedes-Benz C-Class, Mercedes-Benz E-Class, ...?</li>
+                        </ul>
+                    
+                        <h2>10. Data Analysis:</h2>
+                        <ul>
+                            <li>Analyze a set of data related to customer preferences for different Mercedes-Benz features and suggest potential product enhancements based on the findings.</li>
+                            <li>Interpret a bar chart showing the distribution of Mercedes-Benz vehicles by model and color, and draw conclusions about popular color choices among customers.</li>
+                        </ul>
+                        
+        </section>
+    </main>
+    <script>
+        function goToCompanyPage(companyName) {
+            window.location.href = `${companyName}.html`;
+        }
+    </script>
+</body>
+
+</html>

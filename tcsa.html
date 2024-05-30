@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+    
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+    
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+    
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.95); /* Adjust opacity here */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(99, 72, 72, 0.1);
+        }
+    
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    
+        ul {
+            list-style: none;
+            padding: 5;
+        }
+    
+        li {
+            margin: 2em 0;
+        }
+    
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+    
+        #logo {
+            width: 75px; /* Adjust the width and height to your liking */
+            height: 75px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+                <header>
+                    <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+                    <h1>SCHLAHUB</h1>
+                </header>
+                <main>
+                    <section id="companies">
+                        <h1>TCS Aptitude Interview Questions</h1>
+
+                        <h2>1. Quantitative Aptitude</h2>
+                        <ul>
+                            <li>If the ratio of the ages of two persons is 4:3 and the sum of their ages is 35 years, what are their ages?</li>
+                            <li>Simplify the expression: 3x^2 - 12x + 9.</li>
+                            <li>A train running at a speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train?</li>
+                            <li>Calculate the compound interest on a principal amount of ₹5000 at an annual interest rate of 8% for 2 years.</li>
+                            <li>If 5 workers can complete a task in 20 days, how many days will it take for 10 workers to complete the same task?</li>
+                        </ul>
+                    
+                        <h2>2. Logical Reasoning</h2>
+                        <ul>
+                            <li>Complete the series: 2, 6, 12, 20, ...</li>
+                            <li>If 'A' is coded as 'Z', 'B' as 'Y', 'C' as 'X', and so on, how is 'MANGO' coded?</li>
+                            <li>Identify the odd one out: Circle, Square, Triangle, Rectangle.</li>
+                            <li>What is the next number in the sequence: 1, 4, 9, 16, ...?</li>
+                            <li>Find the missing number: 7, 14, 28, 56, ...</li>
+                        </ul>
+                    
+                        <h2>3. Verbal Ability</h2>
+                        <ul>
+                            <li>Choose the correct synonym for 'Benevolent': Generous, Mean, Cruel, Harsh.</li>
+                            <li>Identify the error in the sentence: "She don't like to play soccer."</li>
+                            <li>Fill in the blank: "He is as _____ as a lion." (brave, bravely, braver)</li>
+                            <li>Choose the correct antonym for 'Optimistic': Pessimistic, Realistic, Neutral, Negative.</li>
+                            <li>Complete the sentence: "The book was so interesting that I couldn't put it _____."</li>
+                        </ul>
+                    
+                        <h2>4. Data Interpretation</h2>
+                        <ul>
+                            <li>Given a bar graph showing the sales of a company over 5 years, identify the year with the highest sales.</li>
+                            <li>Interpret the pie chart showing the market share of different companies in a sector.</li>
+                            <li>Analyze a table of data showing the population growth in different cities over a decade.</li>
+                            <li>Calculate the percentage increase in production from one year to the next using a line graph.</li>
+                            <li>Given a histogram showing the distribution of scores in an exam, determine the mode of the scores.</li>
+                        </ul>
+                    
+                        <h2>5. Puzzles</h2>
+                        <ul>
+                            <li>There are three boxes, one contains apples, one contains oranges, and one contains both apples and oranges. The boxes are labeled incorrectly. You can pick one fruit from one box. How can you label all the boxes correctly?</li>
+                            <li>You have a 3-gallon jug and a 5-gallon jug. How can you measure exactly 4 gallons of water using these two jugs?</li>
+                            <li>A clock shows the time as 3:15. What is the angle between the hour and the minute hand?</li>
+                            <li>If you have two ropes, each of which takes exactly 1 hour to burn, how can you measure 45 minutes?</li>
+                            <li>There are five houses in a row in different colors. In each house lives a person with a different nationality. The five owners drink different beverages, smoke different brands of cigars, and keep different pets. Which house does the Norwegian live in?</li>
+                        </ul>
+        </section>
+    </main>
+    <script>
+        function goToCompanyPage(companyName) {
+            window.location.href = `${companyName}.html`;
+        }
+    </script>
+</body>
+
+</html>

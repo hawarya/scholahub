@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        #companies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #companies li {
+            margin: 1em;
+        }
+
+        .company-card {
+            background-color: rgba(140, 170, 187, 0.8);
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .company-card img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .company-card:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+        #logo {
+           width: 75px; /* adjust the width and height to your liking */
+          height: 75px;
+          position: absolute;
+           top: 0;
+           left: 0;
+          margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+        <h1>SCHLAHUB</h1>
+    </header>
+    <main>
+        <section id="companies">
+            <h2>Select a Company</h2>
+            <ul>
+                <li><button class="company-card" onclick="goToCompanyPage('accenture')">
+                    <img src="https://opportunitytrack.in/wp-content/uploads/2021/07/accenture.jpg" alt="Accenture">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('wipro')">
+                    <img src="https://www.wipro.com/content/dam/nexus/en/site/anz/wipro-logo-sustainability-1100x560.png" alt="Wipro">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('mrcooper')">
+                    <img src="https://techcrunch.com/wp-content/uploads/2023/11/mr-cooper-cyberattack-data-exposed.jpg" alt="Mr Cooper">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('tcs')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2cmCptKi7Ra5lCjD1Bt2r0Hh31dnC3zJVTA&s" alt="TCS">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('guvi')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQompEP1QmLQ5c5tQ93iznPPi-oE3casL-F1A&s" alt="Guvi">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('aspiresystem')">
+                    <img src="https://www.temenos.com/wp-content/uploads/2019/06/partner-services-aspire-landscape-image-19-Jun-27.jpg" alt="Aspire System">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('mercedesbenz')">
+                    <img src="https://i.pinimg.com/originals/b9/2b/f1/b92bf19612e524ac1f9d5e998770eba7.jpg" alt="Mercedes Benz">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('zoho')">
+                    <img src="https://mms.businesswire.com/media/20230504005220/en/1783073/22/Zoho-logo_%282%29.jpg" alt="Zoho">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('cisco')">
+                    <img src="https://1000logos.net/wp-content/uploads/2016/11/cisco-emblem.jpg" alt="Cisco">
+                </button></li>
+                <li><button class="company-card" onclick="goToCompanyPage('techmahindra')">
+                    <img src="https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/blt0e88b90cfc84a89d/656bf4e570e985040a600f71/News_Image_-_2023-12-02T212402.789.png?width=850&auto=webp&quality=95&format=jpg&disable=upscale" alt="Tech Mahindra">
+                </button></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function goToCompanyPage(companyName) {
+            window.location.href = `${companyName}.html`;
+        }
+    </script>
+</body>
+</html>

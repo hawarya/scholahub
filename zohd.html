@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            
+        }
+
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.95); /* Adjust opacity here */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(99, 72, 72, 0.1);
+        }
+        h1{
+            text-align:center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: left;
+        }
+
+        #companies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #companies li {
+            margin: 1em;
+        }
+
+        .company-card {
+            background-color: rgba(117, 170, 175, 0.8);
+            color: rgb(249, 238, 238);
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .company-card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+        #logo {
+           width: 75px; /* adjust the width and height to your liking */
+          height: 75px;
+          position: absolute;
+           top: 0;
+           left: 0;
+          margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+        <h1>SCHLAHUB</h1>
+    </header>
+    <main>
+        <h1>DOMAIN WISE QUESTIONS - ZOHO</h1>
+
+        <h2>1. Software Development</h2>
+        <h4>Programming:</h4>
+        <p>1. Write a program to find the factorial of a number.</p>
+        <p>2. Explain the difference between call by value and call by reference.</p>
+        <p>3. How do you implement a stack using an array?</p>
+
+        <h4>Data Structures & Algorithms:</h4>
+        <p>1. Explain different types of sorting algorithms with their time complexities.</p>
+        <p>2. How would you find the middle element of a linked list in a single pass?</p>
+        <p>3. Describe how a binary search tree works.</p>
+
+        <h4>Design Patterns:</h4>
+        <p>1. What is the Observer pattern? Provide a use case.</p>
+        <p>2. Explain the Singleton design pattern with an example.</p>
+        <p>3. Describe the Factory design pattern and its advantages.</p>
+
+        <h4>Testing:</h4>
+        <p>1. What is the importance of unit testing in software development?</p>
+        <p>2. Explain the difference between black-box testing and white-box testing.</p>
+        <p>3. How do you perform automated testing?</p>
+
+        <h2>2. Data Science & Analytics</h2>
+        <h4>Machine Learning:</h4>
+        <p>1. Explain the difference between regression and classification.</p>
+        <p>2. How does the k-means clustering algorithm work?</p>
+        <p>3. What are the steps involved in a machine learning project?</p>
+
+        <h4>Statistics:</h4>
+        <p>1. What is the significance of the p-value in hypothesis testing?</p>
+        <p>2. Explain the concepts of mean, median, and mode.</p>
+        <p>3. Describe the normal distribution and its properties.</p>
+
+        <h4>Data Analysis:</h4>
+        <p>1. How do you handle missing data in a dataset?</p>
+        <p>2. What are the different types of data visualizations?</p>
+        <p>3. Explain the process of data cleaning.</p>
+
+        <h4>Tools:</h4>
+        <p>1. What are the key features of the Pandas library in Python?</p>
+        <p>2. How do you use Matplotlib for data visualization?</p>
+        <p>3. Describe how to use Scikit-Learn for machine learning.</p>
+
+        <h2>3. Cloud Computing</h2>
+        <h4>Cloud Services:</h4>
+        <p>1. What are the main differences between IaaS, PaaS, and SaaS?</p>
+        <p>2. Explain the advantages of using cloud services.</p>
+        <p>3. What are the challenges associated with cloud computing?</p>
+
+        <h4>DevOps:</h4>
+        <p>1. What is Continuous Integration (CI)?</p>
+        <p>2. Explain the benefits of using Continuous Deployment (CD).</p>
+        <p>3. Describe the role of Docker in DevOps.</p>
+
+        <h4>Security:</h4>
+        <p>1. How do you ensure data security in the cloud?</p>
+        <p>2. What are the common security risks in cloud computing?</p>
+        <p>3. Explain the concept of Identity and Access Management (IAM).</p>
+
+        <h4>Containers:</h4>
+        <p>1. What is Docker and how does it work?</p>
+        <p>2. Describe the benefits of using Kubernetes.</p>
+        <p>3. How do you manage container orchestration?</p>
+
+        <h2>4. Networking</h2>
+        <h4>Protocols:</h4>
+        <p>1. Explain the differences between TCP and UDP.</p>
+        <p>2. How does the HTTP protocol work?</p>
+        <p>3. Describe the process of DNS resolution.</p>
+
+        <h4>OSI Model:</h4>
+        <p>1. What are the seven layers of the OSI model?</p>
+        <p>2. Explain the functions of the Transport layer in the OSI model.</p>
+        <p>3. How does data encapsulation work in the OSI model?</p>
+
+        <h4>Network Security:</h4>
+        <p>1. What are the different types of network security threats?</p>
+        <p>2. How do you secure a wireless network?</p>
+        <p>3. Describe the use of firewalls in network security.</p>
+
+        <h4>Tools:</h4>
+        <p>1. How do you use Wireshark for network analysis?</p>
+        <p>2. What is the purpose of a network scanner?</p>
+        <p>3. Explain how to use traceroute to diagnose network issues.</p>
+
+        <h2>5. Cybersecurity</h2>
+        <h4>Threats:</h4>
+        <p>1. What is a phishing attack and how can it be prevented?</p>
+        <p>2. Describe the concept of ransomware.</p>
+        <p>3. How do you protect against denial-of-service (DoS) attacks?</p>
+
+        <h4>Encryption:</h4>
+        <p>1. What is the difference between symmetric and asymmetric encryption?</p>
+        <p>2. Explain how SSL/TLS encryption works.</p>
+        <p>3. What are some common encryption algorithms?</p>
+
+        <h4>Security Protocols:</h4>
+        <p>1. How does HTTPS ensure secure communication?</p>
+        <p>2. Describe the role of VPNs in network security.</p>
+        <p>3. What is IPsec and how is it used?</p>
+
+        <h4>Compliance:</h4>
+        <p>1. What is GDPR and how does it impact data security?</p>
+        <p>2. Explain the importance of compliance in cybersecurity.</p>
+        <p>3. What are the key requirements of HIPAA?</p>
+
+        <h2>6. Database Management</h2>
+        <h4>SQL:</h4>
+        <p>1. How do you perform a JOIN operation in SQL? Explain the different types of joins.</p>
+        <p>2. Write a SQL query to find the second highest salary in a table.</p>
+        <p>3. Explain the concept of indexing in databases. How does it improve query performance?</p>
+
+        <h4>NoSQL:</h4>
+        <p>1. What are the differences between SQL and NoSQL databases? Provide examples of NoSQL databases.</p>
+        <p>2. Explain the CAP theorem in the context of distributed databases.</p>
+        <p>3. How do you handle schema changes in a NoSQL database?</p>
+
+        <h4>Normalization:</h4>
+        <p>1. What is database normalization? Explain the different normal forms.</p>
+        <p>2. Describe the process of normalizing a database schema to the third normal form (3NF).</p>
+        <p>3. What are the advantages and disadvantages of database normalization?</p>
+
+        <h4>Performance Tuning:</h4>
+        <p>1. How do you optimize a slow-running query in SQL?</p>
+        <p>2. What are some common performance issues in databases, and how do you address them?</p>
+        <p>3. Explain the importance of database indexing and partitioning in performance tuning.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 ScholaHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

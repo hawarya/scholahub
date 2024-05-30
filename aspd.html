@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+        p{
+            font-size: larger;
+            color: rgb(0, 0, 0);
+        }
+
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            
+        }
+
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.95); /* Adjust opacity here */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(99, 72, 72, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        #companies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #companies li {
+            margin: 1em;
+        }
+
+        .company-card {
+            background-color: rgba(117, 170, 175, 0.8);
+            color: rgb(249, 238, 238);
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .company-card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+        #logo {
+           width: 75px; /* adjust the width and height to your liking */
+          height: 75px;
+          position: absolute;
+           top: 0;
+           left: 0;
+          margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+        <h1>SCHLAHUB</h1>
+    </header>
+    <main>
+    <h1>Web Development:</h1>
+    <ol>
+        <li>Explain the differences between cookies, local storage, and session storage.</li>
+        <li>What is CORS (Cross-Origin Resource Sharing), and how does it work?</li>
+        <li>Describe the difference between HTTP and HTTPS protocols.</li>
+        <li>How does client-side routing differ from server-side routing?</li>
+    </ol>
+
+    <h1>Mobile Development:</h1>
+    <ol>
+        <li>What are the differences between native, hybrid, and web applications?</li>
+        <li>Explain the purpose of Interface Builder in iOS development.</li>
+        <li>What are the key components of Android architecture?</li>
+        <li>Describe the differences between AsyncTask and Thread in Android.</li>
+    </ol>
+
+    <h1>Data Science/Machine Learning:</h1>
+    <ol>
+        <li>Explain the bias-variance tradeoff in machine learning.</li>
+        <li>What is regularization, and why is it important in training machine learning models?</li>
+        <li>Describe the differences between supervised and unsupervised learning algorithms.</li>
+        <li>What is gradient descent, and how does it work in optimizing machine learning models?</li>
+    </ol>
+
+    <h1>Cloud Computing:</h1>
+    <ol>
+        <li>What is the difference between IaaS, PaaS, and SaaS?</li>
+        <li>Explain the concept of horizontal and vertical scaling in cloud computing.</li>
+        <li>What are the advantages of containerization over virtualization?</li>
+        <li>Describe the key components of AWS (Amazon Web Services) architecture.</li>
+    </ol>
+
+    <h1>Cybersecurity:</h1>
+    <ol>
+        <li>What is a DDoS (Distributed Denial of Service) attack, and how can it be mitigated?</li>
+        <li>Explain the concept of encryption and its role in cybersecurity.</li>
+        <li>What are the different types of malware, and how do they work?</li>
+        <li>Describe the steps involved in a penetration testing (pen testing) process.</li>
+    </ol>
+
+    <h1>DevOps:</h1>
+    <ol>
+        <li>What is Continuous Integration (CI), and how does it differ from Continuous Deployment (CD)?</li>
+        <li>Explain the concept of infrastructure as code (IaC) and its benefits.</li>
+        <li>What are the key principles of the Twelve-Factor App methodology?</li>
+        <li>Describe the differences between Docker and Kubernetes.</li>
+    </ol>
+
+    <h1>Blockchain:</h1>
+    <ol>
+        <li>What is a blockchain, and how does it work?</li>
+        <li>Explain the concept of consensus mechanisms in blockchain technology.</li>
+        <li>What are the differences between public and private blockchains?</li>
+        <li>Describe the role of smart contracts in blockchain applications.</li>
+    </ol>
+
+    <h1>Big Data:</h1>
+    <ol>
+        <li>What is Hadoop, and what are its key components?</li>
+        <li>Explain the differences between batch processing and stream processing in big data.</li>
+        <li>What are the challenges of working with unstructured data in big data systems?</li>
+        <li>Describe the CAP theorem and its implications for distributed data systems.</li>
+    </ol>
+
+</body>
+</html>

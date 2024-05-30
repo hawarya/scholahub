@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHLAHUB</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?cs=srgb&dl=pexels-pixabay-267885.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(12, 16, 12, 0.8);
+            color: white;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: rgba(255, 255, 255, 0.95); /* Adjust opacity here */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(99, 72, 72, 0.1);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        #companies ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #companies li {
+            margin: 1em;
+        }
+
+        .company-card {
+            background-color: rgba(117, 170, 175, 0.8);
+            color: rgb(249, 238, 238);
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .company-card:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(92, 74, 74, 0.1);
+        }
+        #logo {
+           width: 75px; /* adjust the width and height to your liking */
+          height: 75px;
+          position: absolute;
+           top: 0;
+           left: 0;
+          margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\jmahe\OneDrive\Pictures\Saved Pictures\logo.png" alt="ScholaHub Logo" id="logo">
+        <h1>SCHLAHUB</h1>
+    </header>
+    <main>
+        <section id="companies">
+            <h2>Technology Stack:</h2>
+            <ol>
+                <li>What programming languages are predominantly used in Tech Mahindra's projects?</li>
+                <li>Can you elaborate on the frameworks and libraries commonly employed by Tech Mahindra developers?</li>
+                <li>How does Tech Mahindra ensure the scalability and performance of its technology stack?</li>
+                <li>What are the database technologies utilized by Tech Mahindra for data storage and management?</li>
+                <li>How does Tech Mahindra stay updated with emerging technologies and incorporate them into its technology stack?</li>
+            </ol>
+        
+            <h2>Cloud Computing:</h2>
+            <ol>
+                <li>What cloud platforms does Tech Mahindra primarily utilize for its cloud services?</li>
+                <li>Can you explain how Tech Mahindra ensures security and compliance in its cloud solutions?</li>
+                <li>How does Tech Mahindra handle cloud migration projects for its clients?</li>
+                <li>What are the advantages of using cloud-native architectures in Tech Mahindra's solutions?</li>
+                <li>How does Tech Mahindra optimize costs for clients leveraging cloud services?</li>
+            </ol>
+        
+            <h2>AI and Machine Learning:</h2>
+            <ol>
+                <li>How does Tech Mahindra apply artificial intelligence to enhance its solutions and services?</li>
+                <li>Can you provide examples of machine learning algorithms utilized by Tech Mahindra in its projects?</li>
+                <li>How does Tech Mahindra ensure the ethical use of AI in its applications?</li>
+                <li>What role does natural language processing (NLP) play in Tech Mahindra's AI solutions?</li>
+                <li>How does Tech Mahindra leverage AI for predictive analytics and business insights?</li>
+            </ol>
+        
+            <h2>Digital Transformation:</h2>
+            <ol>
+                <li>What strategies does Tech Mahindra employ to facilitate digital transformation for its clients?</li>
+                <li>Can you describe Tech Mahindra's approach to user-centric design in digital transformation projects?</li>
+                <li>How does Tech Mahindra assist organizations in modernizing their legacy systems during digital transformation?</li>
+                <li>What role does agile methodology play in Tech Mahindra's digital transformation initiatives?</li>
+                <li>How does Tech Mahindra measure the success and impact of digital transformation projects for its clients?</li>
+            </ol>
+        
+            <h2>IoT Integration:</h2>
+            <ol>
+                <li>How does Tech Mahindra utilize Internet of Things (IoT) technologies to create smart solutions?</li>
+                <li>Can you provide examples of industries where Tech Mahindra has successfully implemented IoT solutions?</li>
+                <li>How does Tech Mahindra address security and privacy concerns in IoT deployments?</li>
+                <li>What are the challenges associated with integrating IoT devices into existing IT infrastructure, and how does Tech Mahindra overcome them?</li>
+                <li>How does Tech Mahindra leverage data generated by IoT devices to drive actionable insights for its clients?</li>
+            </ol>
+        </section>
+    </main>
+    <script>
+        function goToCompanyPage(companyName) {
+            window.location.href = `${companyName}.html`;
+        }
+    </script>
+</body>
+</html>
